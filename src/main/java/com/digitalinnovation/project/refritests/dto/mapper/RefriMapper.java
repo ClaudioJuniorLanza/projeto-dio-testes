@@ -6,7 +6,7 @@ import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 import org.springframework.web.bind.annotation.Mapping;
 
-@Mapper(componentModel = "spring")
+@Mapper
 public interface RefriMapper {
 
     RefriMapper INSTANCE = Mappers.getMapper(RefriMapper.class);

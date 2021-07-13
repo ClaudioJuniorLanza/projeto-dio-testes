@@ -19,7 +19,7 @@ import java.util.stream.Collectors;
 public class RefriService {
 
     private final RefriRepository refriRepository;
-    private final RefriMapper refriMapper;
+    private final RefriMapper refriMapper = RefriMapper.INSTANCE;
 
     public List<RefrigeranteDTO> listAll() {
         return refriRepository.findAll()
